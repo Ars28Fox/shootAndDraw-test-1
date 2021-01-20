@@ -1,0 +1,350 @@
+@font-face {
+    font-family: "Inter";
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/inter-v2-latin_cyrillic-600.woff") format("woff"), url("../fonts/inter-v2-latin_cyrillic-600.woff2") format("woff2");
+}
+  
+@font-face {
+    font-family: "Inter";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/inter-v2-latin_cyrillic-700.woff") format("woff"), url("../fonts/inter-v2-latin_cyrillic-700.woff2") format("woff2");
+}
+
+html {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Arial", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.defense {
+    height: 100vh;
+    background-color: #070707;
+    color: #fff;
+}
+
+.defense__wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 27px 0; 
+}
+
+@media (min-width: 768px) {
+    .defense__wrap {
+        padding: 54px 0; 
+    }
+}
+
+.defense__title {
+    width: 100%;
+    max-width: 350px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+@media (min-width: 768px) {
+    .defense__title {
+        width: 100%;
+        max-width: 500px;
+        margin: 0;
+        margin-left: 110px;
+        margin-right: auto;
+        font-size: 28px;
+        line-height: 34px;
+    }
+}
+
+.carousel {
+    width: 100%;
+    margin-top: 44px;
+}
+
+@media (min-width: 768px) {
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 47px;
+        position: relative;
+        min-height: 400px;
+    }
+}
+
+.cards {
+    width: 100%;
+    max-width: 320px;
+    min-height: 80px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .cards {
+        position: absolute;
+        max-width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: visible;
+    }
+}
+
+.cards__wrap {
+    position: relative;
+    display: flex;
+    transition: transform .3s;
+}
+
+@media (min-width: 768px) {
+    .cards__wrap {
+        width: 100%;
+        max-width: 600px;
+        height: 100%;
+        z-index: 1;
+    }
+}
+
+.card {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .card {
+        position: absolute;
+        max-width: 300px;
+        text-align: right;
+    }
+    .card:nth-child(1) {
+        left: 0;
+        bottom: -40px;
+    }
+    .card:nth-child(2) {
+        max-width: 233px;
+        left: -14%;
+        bottom: 75px;
+    }
+    .card:nth-child(3) {
+        left: -25%;
+        top: 95px;
+    }
+    .card:nth-child(4) {
+        left: 50%;
+        top: -15px;
+        text-align: left;
+    }
+    .card:nth-child(5) {
+        max-width: 220px;
+        left: 75%;
+        top: 80px;
+        text-align: left;
+    }
+    .card:nth-child(6) {
+        max-width: 250px;
+        left: 75%;
+        bottom: 100px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1100px) {
+    .card {
+        position: absolute;
+        text-align: right;
+    }
+    .card:nth-child(1) {
+        max-width: 600px;
+        left: -50%;
+        bottom: -30px;
+    }
+    .card:nth-child(2) {
+        max-width: 600px;
+        left: -75%;
+        bottom: 70px;
+    }
+    .card:nth-child(3) {
+        max-width: 600px;
+        left: -75%;
+        top: 100px;
+    }
+    .card:nth-child(4) {
+        max-width: 600px;
+        left: 50%;
+        top: 0;
+        text-align: left;
+    }
+    .card:nth-child(5) {
+        max-width: 600px;
+        left: 75%;
+        top: 100px;
+        text-align: left;
+    }
+    .card:nth-child(6) {
+        max-width: 600px;
+        left: 75%;
+        bottom: 110px;
+        text-align: left;
+    }
+}
+
+.card__title {
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1100px) {
+    .card__title {
+        font-size: 21px;
+        line-height: 27px;
+    }
+}
+
+.track {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .track {
+        max-width: 300px;
+    }
+}
+
+.track__img {
+    position: relative;
+    transform-origin: center;
+    transition: transform .3s;
+}
+
+.track__img.rotated {
+    transform: rotate(60deg);
+}
+
+.track__pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+    .track__pointer {
+        display: none;
+    }
+}
+
+.track__pointer.track__pointer--move_right {
+    animation: pause 2s both, move-right 2s both infinite;
+    animation-delay: 2s;
+}
+
+.track__pointer.track__pointer--move_left {
+    animation: pause 2s both, move-left 3s both infinite;
+    animation-delay: 2s;
+}
+
+.track__pointer.track__pointer--move_both {
+    animation: pause 2s both, move-left-right 3s both infinite;
+    animation-delay: 2s;
+}
+
+@keyframes pause {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes move-right {
+    0% {
+        transform: translate(-50%, -50%)
+    }
+
+    25% {
+        transform: translate(50px, -50%)
+    }
+
+    50%, 100% {
+        transform: translate(-50%, -50%)
+    }
+}
+
+@keyframes move-left {
+    0% {
+        transform: translate(-50%, -50%)
+    }
+
+    25% {
+        transform: translate(-77px, -50%)
+    }
+
+    50%, 100% {
+        transform: translate(-50%, -50%)
+    }
+}
+
+@keyframes move-left-right {
+    0% {
+        transform: translate(-50%, -50%)
+    }
+
+    25% {
+        transform: translate(50px, -50%)
+    }
+
+    50% {
+        transform: translate(-50%, -50%)
+    }
+    75% {
+        transform: translate(-77px, -50%)
+    }
+    100% {
+        transform: translate(-50%, -50%)
+    }
+}
